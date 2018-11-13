@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+	<html lang="es" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/favicon.png">
+		<!-- Author Meta -->
+		<meta name="author" content="rosseltech.cl">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Barrio Comercial</title>
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!-- CSS ============================================= -->
+			<link rel="stylesheet" href="../../convenios/css/linearicons.css">
+			<link rel="stylesheet" href="../../convenios/css/font-awesome.min.css">
+			<link rel="stylesheet" href="../../convenios/css/bootstrap.css">
+			<link rel="stylesheet" href="../../convenios/css/magnific-popup.css">
+			<link rel="stylesheet" href="../../convenios/scss/animate.min.css">
+			<link rel="stylesheet" href="../../convenios/css/owl.carousel.css">
+			<link rel="stylesheet" href="../../convenios/css/main.css">
+		</head>
+		<body>
+			
+			<section class="banner-area" id="home">
+				<!-- Start Header Area -->
+				<header class="default-header">
+					<nav class="navbar navbar-expand-lg  navbar-light">
+						<div class="container">
+							  <a class="navbar-brand" href="../index.html">
+							    <button class="primary-btn mt-20">Barrio Comercial<span class="lnr lnr-arrow-right"></span></button>
+							  </a>
+							  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							    <span class="text-white lnr lnr-menu"></span>
+							  </button>					
+						</div>
+					</nav>
+				</header>
+				<!-- End Header Area -->				
+			</section>
+			
+			<div class="title text-center">
+				<h1 class="mb-10">Coordinador Pedidos</h1>
+				<p>Los pedidos deben hacerse hasta las 22:00 del día anterior al despacho y planifique así su merienda diaria, cordialmente.</p>
+			</div>
+			
+			<!-- Start gallery Area -->
+			<section class="gallery-area" id="gallery">
+				<div class="container-fluid">
+					<div class="row no-padding">
+						<div class="active-gallery">
+							<div class="item single-gallery">
+								<img src="img/g10.png" alt="">
+							</div>	
+							<div class="item single-gallery">
+								<img src="img/g11.png" alt="">
+							</div>	
+							<div class="item single-gallery">
+								<img src="img/g12.png" alt="">
+							</div>	
+							<div class="item single-gallery">
+								<img src="img/g13.png" alt="">
+							</div>	
+							<div class="item single-gallery">
+								<img src="img/g14.png" alt="">
+							</div>	
+							<div class="item single-gallery">
+								<img src="img/g15.png" alt="">
+							</div>																	
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End gallery Area -->
+			<div class="container">
+				<div class="row d-flex justify-content-center" id="boleta">
+					<div class="menu-content pb-10 col-lg-6">
+						<div class="title text-center" style="background-color:#fff">
+						<!-- Container -->
+						
+							<p> ---------------------------------------------- </p>
+							<!-- <h3 class="text">PEDIDO N° <font color="#ff0000">000021</font></h3> -->
+							<p id="muestrafecha"></p>
+							<h5 class="mb-10">R.U.T. ChimpanChef </h5>
+							<p id="cliche">GOHAN "CHIMPANCHEF",  Aportamos valor a tu ecosistema.</p> 
+							<p> ---------------------------------------------- </p>	
+							<h1><font color="#5F04B4"><p id="muestrat">TOTAL CLP</p></font></h1>
+							<h2><font color="#B0B0B0"><p id="muestra">SUB TOTAL CLP</p></font></h2>
+							<p> ---------------------------------------------- </p>	
+							<!-- Linea Base  -->
+							<div class="progress-table-wrap" id="tablaProd">
+								<div class="progress-table" id="tabla"> 
+									<div class="table-row" id="botones">
+										<div class="col-lg-8 form-group" id="total" name="total" style='display:none;'>  
+											<input type="button" onclick="fdiv(21);" class="genric-btn success circle arrow form-control"  id="tot" name="tot" value="AGREGA SUB TOTAL x PRODUCTO +">
+										</div>	
+									</div>
+									<div class="table-row">
+										<div class="col-lg-4 form-group">  
+											<input type="button" onclick="fdiv(14);" class="genric-btn mt-1 primary circle arrow form-control"  id="codprod50" name="codprod50" value="GOHAN SALMON (3.300 CLP)">
+										</div>	
+										<div class="col-lg-1 form-group" id="cant4">
+											<input type="hidden" id="hqty4" name="hqty4" value = 0 > 
+											<h3><font color="#B0B0B0"><p id="qty4">0</p></font></h3>
+										</div>
+										<div class="col-lg-3 form-group" id="precio4">
+											<input type="hidden" id="hvta4" name="hvta4" value = 0 > 
+											<h2><font color="#B0B0B0"><p id="vta4">0</p></font></h2>
+										</div>
+									</div>
+									
+									<div class="table-row">
+										<div class="col-lg-4 form-group">  
+											<input type="button" onclick="fdiv(13);" class="genric-btn mt-1 primary circle arrow form-control"  id="codprod40" name="codprod40" value="GOHAN POLLO (2.500 CLP)">
+										</div>	
+										<div class="col-lg-1 form-group" id="cant3">
+											<input type="hidden" id="hqty3" name="hqty3" value=0>
+											<h3><font color="#B0B0B0"><p id="qty3">0</p></font></h3>
+										</div>
+										<div class="col-lg-3 form-group" id="precio3">
+											<input type="hidden" id="hvta3" name="hvta3" value = 0 >
+											<h2><font color="#B0B0B0"><p id="vta3">0</p></font></h2>
+										</div>
+									</div>
+									
+									<div class="table-row">
+										<div class="col-lg-4 form-group">  
+											<input type="button" onclick="fdiv(12);" class="genric-btn mt-1 primary circle arrow form-control"  id="codprod30" name="codprod30" value="GOHAN CHAMPIGNON (2.500 CLP)">
+										</div>	
+										<div class="col-lg-1 form-group" id="cant2">
+											<input type="hidden" id="hqty2" name="hqty2" value=0>
+											<h3><font color="#B0B0B0"><p id="qty2">0</p></font></h3>
+										</div>
+										<div class="col-lg-3 form-group" id="precio2">
+											<input type="hidden" id="hvta2" name="hvta2" value = 0 >
+											<h2><font color="#B0B0B0"><p id="vta2">0</p></font></h2>
+										</div>
+									</div>
+									
+									<!-- display:none -->
+									<div class="col-lg-4 form-group" id="grantotal" style='display:none;'>
+										<input type="text" class="common-input mb-1 form-control" id="vtatotal" name="vtatotal" disabled value=0>
+									</div>
+									<!-- display:none -->
+								</div> 		
+							<!-- Linea Base   -->
+								<div class="col-lg-12 form-group" id="submite" name="submite" style='display:none;'>  
+									<input type="button" onclick="fdiv(25);" class="genric-btn danger circle arrow form-control"  id="subm" name="subm" value="RETIRA TU PEDIDO CAMINO A CASA, GRACIAS POR PREFERIRNOS">
+								</div>	
+							<p> ---------------------------------------------- </p>	
+							</div> 	
+											
+							<div class="progress-table" id="tabladetalle" style='display:none;'> 
+									<!-- contenido -->
+									<div class="table-row" id="detalle">
+										<p>DETALLE DE TU PEDIDO</p> 
+									</div>
+									<div class="table-row" id="detalle1">
+										<p id="1texto"></p>
+									</div>
+									<div class="table-row" id="detalle2">
+										<p id="1texto1"></p>
+									</div>
+									<div class="1table-row" id="detalle3">
+										<p id="1texto2"></p>
+									</div>
+									<!-- 
+									<div class="table-row" id="detalle4">
+										<p id="1texto3"></p>
+									</div>
+									<div class="table-row" id="detalle5">
+										<p id="1texto4"></p>
+									</div>
+									 -->
+									<!-- contenido -->
+								</div>
+		
+						<!-- Container -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- start contact Area -->		
+			<!-- <section class="contact-area section-gap" id="contact"> -->
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Delivery</h1>
+								<p>Te ayudamos a organizar tu ecosistema natural.</p>
+							</div>
+						</div>
+					</div>	
+														
+					<form class="form-area " id="qrForm" name="qrForm" action="#" method="post" class="contact-form text-right">
+						<div class="row">	
+						
+						<div class="col-lg-6 form-group" >
+							<input id="name" name="name" placeholder="Ingresa tu nombre distribuidor" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingresa tu nombre'" class="common-input mb-20 form-control" required="" type="text">
+						
+							<input id="email" name="email" placeholder="Ingresa tu email" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'tu dirección de correo electrónico'" class="common-input mb-20 form-control" required="" type="email">
+							 
+							<input id="subject" name="subject" placeholder="Ingresa tu teléfono +569 9999999 " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingresa tu teléfono +569 9999999'" class="common-input mb-20 form-control" required="" type="text">
+
+						</div>
+						
+						<div class="col-lg-4 form-group">
+							<h3><font color="#5F04B4">
+							<p>PEDIDO GOHAN</p> 
+							</font>
+							</h3>
+							<p id="texto"></p>
+							<p id="texto1"></p>
+							<p id="texto2"></p>
+							<p id="texto3"></p>
+							<p id="texto4"></p>
+							
+							<button class="primary-btn mt-20">Haznos tu pedido antes de 21:00, <span class="lnr lnr-arrow-right"></span></button>
+							<!-- <div class="alert-msg"> -->					
+						</div>
+							
+						<div class="info"></div>
+					</form>						
+					
+				</div>	
+			<!-- </section> -->
+			<!-- end contact Area -->
+			
+			
+			
+			
+			<!-- JS Area -->
+			<script src="../../convenios/js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+			<script src="../../convenios/js/vendor/bootstrap.min.js"></script>
+			<script src="../../convenios/js/jquery.ajaxchimp.min.js"></script>
+			<script src="../../convenios/js/jquery.magnific-popup.min.js"></script>	
+			<script src="../../convenios/js/owl.carousel.min.js"></script>			
+			<script src="../../convenios/js/jquery.sticky.js"></script>
+			<script src="../../convenios/js/slick.js"></script>
+			<script src="../../convenios/js/jquery.counterup.min.js"></script>
+			<script src="../../convenios/js/waypoints.min.js"></script>		
+			<script src="../../convenios/js/main.js"></script>
+	
+	</body>
+</html>
